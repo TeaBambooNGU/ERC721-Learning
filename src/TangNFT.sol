@@ -33,4 +33,8 @@ contract TangNFT is ERC721, Ownable {
         string memory baseURI = _baseURI();
         return bytes(baseURI).length > 0 ? string.concat(baseURI, tokenId.toString()) : "";
     }
+
+    function balanceOf(address owner) public view override returns (uint256) {
+        return super.balanceOf(owner);
+    }
 }
