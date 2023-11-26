@@ -29,7 +29,11 @@ contract TangNFTtest is Test {
         assert (keccak256(abi.encodePacked(tokenURI)) == keccak256(abi.encodePacked(result)));
     }
 
+<<<<<<< HEAD
     function testFailTokenURI() public{
+=======
+    function testFailTokenURI() public view {
+>>>>>>> abbbaf2 (code)
         string memory tokenURI = "ipfs://QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/19970710";
         uint tokenId = 19970710;
         string memory result = tangNFT.tokenURI(tokenId);
