@@ -12,7 +12,7 @@ contract TangNFTScript is Script {
 
     function run() public {
         vm.startBroadcast();
-        TangNFT tangNFT = new TangNFT("TangNFT","TNFT");
+        TangNFT tangNFT = new TangNFT("BSET WISH TO TW","Tang");
         vm.stopBroadcast();
     }
 }
